@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title > product management project</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="crud">
+        <div class="header">
+           <h2>
+            crud 
+           </h2>
+           <p> Product Mangment System</p>
+        </div>
+        <div class="inputs">
+          <input type="text" id="title" placeholder="title">
+          <div class="parent">
+            <input onkeyup="getTotal()" type="number" placeholder="price" id="price" >
+            <input  onkeyup="getTotal()" type="number" placeholder="taxes" id="taxes">
+            <input  onkeyup="getTotal()"  type="number" placeholder="adds" id="adds">
+            <input  onkeyup="getTotal()"  type="number" placeholder="discount" id="discount">
+            <small id="total"> 3334</small>
+          </div>
+         
+          <input type="number" placeholder="count" id="count">
+          <input type="text" placeholder="category" id="category">
+          <button id="submit"> Create</button>
+        </div>
+        <div class="outputs">
+         <input onkeyup="searchData(this.value)" type="text" placeholder="search" id="search">
+         <div class="btn-search">
+            <button onclick="getSearchMood(this.id)" id="searchTitle"> Search By Title</button>
+            <button onclick="getSearchMood(this.id)" id="searchcateogry"> Search By Category</button>
+         </div>
+         <div id="deleteAll">
+            
+         </div>
+         <table >
+            <tr>
+                <th> id</th>
+                <th> title</th>
+                <th> price </th>
+                <th> taxes</th>
+                <th>ads</th>
+                <th> discount</th>
+                <th> total</th>
+                <th> category</th>
+                <th>update</th>
+                <th>delete</th>
+            </tr>
+          <tbody id="tbody">
+             <!-- 
+                <tr>
+                    <td> 1</td>
+                    <td> samsoung</td>
+                    <td>5000</td>
+                    <td> 100</td>
+                    <td> 200</td>
+                    <td> 100</td>
+                    <td> 2200</td>
+                    <td> smart phone</td>
+                    <td> <button id="udate"> update</button></td>
+                    <td> <button id="delete"> delete</button></td>
+                </tr>
+                <tr>
+                    <td> 1</td>
+                    <td> samsoung</td>
+                    <td>5000</td>
+                    <td> 100</td>
+                    <td> 200</td>
+                    <td> 100</td>
+                    <td> 2200</td>
+                    <td> smart phone</td>
+                    <td> <button id="udate"> update</button></td>
+                    <td> <button id="delete"> delete</button></td>
+                </tr>
+                <tr>
+                    <td> 1</td>
+                    <td> samsoung</td>
+                    <td>5000</td>
+                    <td> 100</td>
+                    <td> 200</td>
+                    <td> 100</td>
+                    <td> 2200</td>
+                    <td> smart phone</td>
+                    <td> <button id="udate"> update</button></td>
+                    <td> <button id="delete"> delete</button></td>
+                </tr>
+                 -->
+            </tbody>
+         </table>
+        </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

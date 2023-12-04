@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #222;
+    color: white;
+    font-family: system-ui;
+
+}
+.crud {
+    width:80%;
+    margin: auto;
+}
+.header {
+    text-align: center;
+    margin: 20px;
+    text-transform: uppercase;
+}
+input{
+    width: 100%;
+    height: 25px;
+    border: none;
+    outline: none;
+    background-color: bisque;
+    margin: 4px 0;
+    border-radius: 4px;
+    padding: 5px;
+    color: #222;
+    transition: 0.5s;
+    margin-top: 4px;
+}
+input:focus {
+    background-color: rgb(40, 35, 28);
+    background-color: rgb(99, 98, 98);
+    color: white;
+    transform: scale(1.1);
+
+}
+.parent {
+   
+    display: flex;
+    gap:20px
+}
+.parent input {
+    width: 20%;
+}
+#total {
+    background-color: rgb(93, 7, 7);
+    padding: 4px;
+    border-radius: 4px;
+}
+#total::before{
+    content: 'total : ';
+}
+button {
+    width: 100%;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    background-color: rgb(99, 98, 98);
+    color: white;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+button:hover {
+    background-color: rgb(139, 137, 137);
+    color: black;
+    font-size: 15px;
+    padding: 3px;
+    letter-spacing: 2px;
+}
+input:focus::placeholder {
+    color: white;
+    font-size: 18PX;
+}
+.btn-search{
+    display: flex;
+    justify-content: space-between;
+}
+.btn-search button {
+    width: 45%;
+    margin-top: 5px;
+}
+table {
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+table th {
+    text-transform: uppercase;
+}
+th,td {
+    padding: 5px;
+}
+#deleteAll {
+    margin: 20px 0;
+}
